@@ -7,7 +7,7 @@
             document.getElementById("golf").innerHTML = "Golful este o masina compacta germana";
         }
     
-        window.alert(5+6);//works also without window
+        //window.alert(5+6);//works also without window
         console.log(10+10);//f12 debugging in console
     </script>
 </head>
@@ -61,6 +61,22 @@
     a = 5;
     document.getElementById("variable").innerHTML = a;
     document.getElementById("myName").innerHTML = "Raul " + "Staicu" + "-Valentin";
+</script>
+
+<p id="myTest"></p>
+<button type="button" onclick="myTest()">Buton de test</button>
+<p id="test"></p>
+
+<script>
+    function myTest(){
+        let r, s, v;
+        r = 2;
+        s = 10;
+        v = r * s;
+        document.getElementById("myTest").innerHTML = v;
+        var l = 1;
+        document.getElementById('test').innerHTML = l;
+    }
 </script>
 
 </body>
