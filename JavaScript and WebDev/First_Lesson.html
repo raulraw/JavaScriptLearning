@@ -79,5 +79,20 @@
     }
 </script>
 
+<p id="car"></p>
+<script>
+    //create an array
+    const cars = ["Audi", "VW", "BMW"];
+    var aux;
+    //change the first element of the array
+    aux = cars[0];
+    cars[0] = cars[1];
+    cars[1] = aux;
+    //add a new element to array
+    cars.push("Mercedes");
+    //display the array
+    document.getElementById("car").innerHTML = cars;
+ </script>
+
 </body>
 </html> 
