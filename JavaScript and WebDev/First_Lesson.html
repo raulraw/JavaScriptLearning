@@ -94,5 +94,20 @@
     document.getElementById("car").innerHTML = cars;
  </script>
 
+<p id="today"></p>
+<script>
+    //create an object
+    const car = {type:"Golf", model:"7", color:"red"};
+    //change a property
+    car.color = "neagra";
+    //add a property;
+    car.owner = "Raul";
+    //display the new property:
+    document.getElementById("today").innerHTML = 
+    "Astazi prezentam masina " + car.type + " de culoare " + car.color + " si model " + car.model + " a proprietarului " + car.owner;
+</script>
+
+
+
 </body>
 </html> 
