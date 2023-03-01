@@ -160,9 +160,21 @@
         }
     }
 console.log(golf.allDetails);
-console.log(typeof golf.allDetails);
-document.getElementById("golfozaur").innerHTML = golf.allDetails;
+document.getElementById("golfozaur").innerHTML = golf.allDetails.call(golfozaur);
+console.log(golf.allDetails.call(golfozaur));
 </script>
+
+<button type="button" onclick="document.getElementById('time').innerHTML=Date()">Cat este ceasul? v1</button> 
+<button type="button" onclick="this.innerHTML = Date()">Cat este ceasul? v2</button>
+<button type="button" onclick="displayDate()">Cat este ceasul? v3</button>
+<p id="time"></p>
+<script>
+    //JS Events
+    function displayDate(){
+        document.getElementById("clock").innerHTML = Date();
+    }
+</script>
+<p id="clock"></p>
 
 </body>
 </html> 
