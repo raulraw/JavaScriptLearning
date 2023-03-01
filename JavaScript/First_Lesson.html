@@ -125,5 +125,27 @@
     }
 </script>
 
+<p id="celsius"></p>
+<script>
+    //convert fahrenheit to celsius
+    function toCelsius(f){
+    return (5/9) * (f-32);
+    }
+    document.getElementById("celsius").innerHTML = "Afara sunt " + toCelsius(77) + " de grade Celsius";
+</script>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    myFunctie();
+    //variable carName is available just in myFunctie
+    function myFunctie(){
+        let carName = "Volkswagen";
+        document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+    }
+    document.getElementById("demo2").innerHTML = typeof carName;
+</script>
+
+
 </body>
 </html> 
