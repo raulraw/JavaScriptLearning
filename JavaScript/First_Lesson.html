@@ -147,5 +147,22 @@
 </script>
 
 
+<p id="golfozaur"></p>
+<script>
+    //JS Objects
+    const golf = {
+        color : "negru",
+        engine : "2.0L",
+        typeOfEngine: "diesel",
+        horsepower : 150,
+        allDetails : function() {
+            return "Acest Volkswagen este de culoare " + this.color + " ce prezinta un motor de " + this.engine + this.typeOfEngine + " ce dezvolta " + this.horsepower;
+        }
+    }
+console.log(golf.allDetails);
+console.log(typeof golf.allDetails);
+document.getElementById("golfozaur").innerHTML = golf.allDetails;
+</script>
+
 </body>
 </html> 
